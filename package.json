@@ -1,0 +1,30 @@
+{
+  "name": "json-translator",
+  "version": "1.0.0",
+  "description": "small script that takes json file as argument and translate its values to desired language.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denizyesilirmak/json-translator.git"
+  },
+  "keywords": [
+    "json",
+    "translator",
+    "google",
+    "translator"
+  ],
+  "author": "deniz yeşilırmak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denizyesilirmak/json-translator/issues"
+  },
+  "homepage": "https://github.com/denizyesilirmak/json-translator#readme",
+  "dependencies": {
+    "@google-cloud/translate": "^6.2.4",
+    "args-parser": "^1.2.0",
+    "dotenv": "^10.0.0"
+  }
+}
