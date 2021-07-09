@@ -21,7 +21,7 @@ const translateText = async (text, targetLanguage) => {
   }
 }
 
-const translate_strings_obj = async (str_obj, targetLang) => {
+const translateValues = (str_obj, targetLang) => {
   return new Promise(async (resolve, reject) => {
     let result = {}
     for (const e in str_obj) {
@@ -60,7 +60,7 @@ const jsonTranslator = async () => {
   const file = fs.readFileSync(path, 'utf8')
   const jsonFile = JSON.parse(file)
 
-  const outputJson = await translate_strings_obj(jsonFile, outputLanguageCode)
+  const outputJson = await translateValues(jsonFile, outputLanguageCode)
   writeToFile(outputPath, JSON.stringify(outputJson))
 }
 
